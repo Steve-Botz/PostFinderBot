@@ -1,7 +1,3 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 from utils import *
 from pyrogram import Client, filters
 from plugins.generate import database 
@@ -13,13 +9,13 @@ async def start(bot, message):
     username = (await bot.get_me()).username
     await add_user(message.from_user.id, message.from_user.first_name)
     button = [[
-        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{username}?startgroup=true')
+        InlineKeyboardButton('㉨⁠⁠ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ㉨⁠⁠', url=f'http://t.me/{username}?startgroup=true')
     ],[
-        InlineKeyboardButton("ʜᴇʟᴘ", callback_data="misc_help"),
-        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_about")
+        InlineKeyboardButton("ʜᴇʟᴘ 🙋🏻‍♂️", callback_data="misc_help"),
+        InlineKeyboardButton("ᴀʙᴏᴜᴛ 💌", callback_data="misc_about")
     ],[
-        InlineKeyboardButton("🤖 ᴜᴘᴅᴀᴛᴇ", url="https://t.me/vj_botz"),
-        InlineKeyboardButton("🔍 ɢʀᴏᴜᴘ", url="https://t.me/vj_bot_disscussion")
+        InlineKeyboardButton("⛅ ᴜᴘᴅᴀᴛᴇ ⛅", url="https://t.me/MSLANDERS"),
+        InlineKeyboardButton("🍁 sᴜᴘᴘᴏʀᴛ 🍁", url="https://t.me/MSLANDERS_HELP")
     ]]
     await message.reply(text=script.START.format(message.from_user.mention),
                         disable_web_page_preview=True,
@@ -61,13 +57,13 @@ async def misc(bot, update):
     if data=="home":
        username = (await bot.get_me()).username
        button = [[
-           InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{username}?startgroup=true')
+           InlineKeyboardButton('㉨⁠⁠⁠⁠ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ㉨⁠⁠', url=f'http://t.me/{username}?startgroup=true')
        ],[
-           InlineKeyboardButton("ʜᴇʟᴘ", callback_data="misc_help"),
-           InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="misc_about")
+           InlineKeyboardButton("ʜᴇʟᴘ 🙋🏻‍♂️", callback_data="misc_help"),
+           InlineKeyboardButton("ᴀʙᴏᴜᴛ 💌", callback_data="misc_about")
        ],[
-           InlineKeyboardButton("🤖 ᴜᴘᴅᴀᴛᴇ", url="https://t.me/vj_botz"),
-           InlineKeyboardButton("🔍 ɢʀᴏᴜᴘ", url="https://t.me/vj_bot_disscussion")
+           InlineKeyboardButton("⛅ ᴜᴘᴅᴀᴛᴇ ⛅", url="https://t.me/MSLANDERS"),
+           InlineKeyboardButton("🍁 sᴜᴘᴘᴏʀᴛ 🍁", url="https://t.me/MSLANDERS_HELP")
        ]]
        await update.message.edit(text=script.START.format(update.from_user.mention),
                                  disable_web_page_preview=True,

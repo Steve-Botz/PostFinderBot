@@ -1,7 +1,3 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 from info import *
 from utils import *
 from asyncio import sleep
@@ -19,7 +15,7 @@ async def new_group(bot, message):
                        channels=[],
                        f_sub=False,
                        verified=False)
-       m=await message.reply(f"💢 <b>Thanks for adding me in {message.chat.title} ✨\n\n⭕ Please Get Access By /verify</b>\n\n")
+       m=await message.reply(f"🥶 <b>Thanks for adding me in {message.chat.title} ✨\n\n📨 Please Get Access By /verify</b>\n\n")
        text=f"#NewGroup\n\nGroup: {message.chat.title}\nGroupID: `{message.chat.id}`\nAddedBy: {message.from_user.mention}\nUserID: `{message.from_user.id}`"
        await bot.send_message(chat_id=LOG_CHANNEL, text=text)
        await sleep(60)
