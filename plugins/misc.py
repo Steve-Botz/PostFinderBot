@@ -14,8 +14,8 @@ async def start(bot, message):
         InlineKeyboardButton("ʜᴇʟᴘ 🙋🏻‍♂️", callback_data="misc_help"),
         InlineKeyboardButton("ᴀʙᴏᴜᴛ 💌", callback_data="misc_about")
     ],[
-        InlineKeyboardButton("⛅ ᴜᴘᴅᴀᴛᴇ ⛅", url="https://t.me/MSLANDERS"),
-        InlineKeyboardButton("🍁 sᴜᴘᴘᴏʀᴛ 🍁", url="https://t.me/MSLANDERS_HELP")
+        InlineKeyboardButton("⛅ ᴜᴘᴅᴀᴛᴇ ⛅", url="https://t.me/SteveBotz"),
+        InlineKeyboardButton("🍁 sᴜᴘᴘᴏʀᴛ 🍁", url="https://t.me/SteveBotzSupport")
     ]]
     await message.reply(text=script.START.format(message.from_user.mention),
                         disable_web_page_preview=True,
@@ -62,8 +62,8 @@ async def misc(bot, update):
            InlineKeyboardButton("ʜᴇʟᴘ 🙋🏻‍♂️", callback_data="misc_help"),
            InlineKeyboardButton("ᴀʙᴏᴜᴛ 💌", callback_data="misc_about")
        ],[
-           InlineKeyboardButton("⛅ ᴜᴘᴅᴀᴛᴇ ⛅", url="https://t.me/MSLANDERS"),
-           InlineKeyboardButton("🍁 sᴜᴘᴘᴏʀᴛ 🍁", url="https://t.me/MSLANDERS_HELP")
+           InlineKeyboardButton("⛅ ᴜᴘᴅᴀᴛᴇ ⛅", url="https://t.me/SteveBotz"),
+           InlineKeyboardButton("🍁 sᴜᴘᴘᴏʀᴛ 🍁", url="https://t.me/SteveBotzSupport")
        ]]
        await update.message.edit(text=script.START.format(update.from_user.mention),
                                  disable_web_page_preview=True,
