@@ -36,7 +36,7 @@ async def search(bot, message):
     if message.text.startswith("/"):
        return    
     query   = message.text 
-    head    = f"<b>🌻 Here is the results {message.from_user.mention} 👇\n\n⚜️ Powered By : @MSLANDERS</b>\n\n"
+    head    = f"<b>🌻 Here is the results {message.from_user.mention} 👇\n\n⚜️ Powered By : @SteveBotz</b>\n\n"
     results = ""
     try:
        for channel in channels:
@@ -51,7 +51,7 @@ async def search(bot, message):
           for movie in movies: 
               buttons.append([InlineKeyboardButton(movie['title'], callback_data=f"recheck_{movie['id']}")])
           msg = await message.reply_photo(photo="https://i.ibb.co/TxhKLR6R/x.jpg",
-                                          caption="<b><I>🔻 I Couldn't find anything related to Your Query😕.\n🔺 Did you mean any of these?</I></b>", 
+                                          caption="<b><I>🤧 I Couldn't find anything related to Your Query😕.\n🧐 Did you mean any of these?</I></b>", 
                                           reply_markup=InlineKeyboardMarkup(buttons))
        else:
           await send_message_in_chunks(bot, message.chat.id, head+results)
@@ -78,7 +78,7 @@ async def recheck(bot, update):
     id      = update.data.split("_")[-1]
     query   = await search_imdb(id)
     channels = (await get_group(update.message.chat.id))["channels"]
-    head    = "<b>💡 I Have Searched Movie With Wrong Spelling But Take care next time 👇\n\n⚜️ Powered By : @MSLANDERS</b>\n\n"
+    head    = "<b>💡 I Have Searched Movie With Wrong Spelling But Take care next time 👇\n\n⚜️ Powered By : @SteveBotz</b>\n\n"
     results = ""
     try:
        for channel in channels:
